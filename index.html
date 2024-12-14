@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <br>
+    <a onclick="toggleDarkMode()" class="btn">Dark Mode: <b id="showDarkModeToggle">On</b></a>
+    <br><br><br>
     <h1>Basketfoot Counter</h1>
-
-    <h2>Team 1: <b>DOUBLE J</b></h2>
+    <br>
+    <h2>Team 1: <b id="teamNameOne"></b></h2>
+    <div id="inputContainerOne">
+        <input type="text" id="textInputOne" placeholder="Team 1 Name" />
+        <button onclick="changeNameTeamOne()">Submit</button>
+    </div>    
     <a onclick="addPointToTeamOne()" class="btn">+1 point</a>
     <h3 id="showPointsOne">0</h3>
 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br><br><br><br><br><br><br><br><br><br>
 
-    <h2>Team 2: <b>Hanslope Cowboys</b></h2>
+    <h2>Team 2: <b id="teamNameTwo"></b></h2>
+    <div id="inputContainerTwo">
+        <input type="text" id="textInputTwo" placeholder="Team 2 Name" />
+        <button onclick="changeNameTeamTwo()">Submit</button>
+    </div>   
     <a onclick="addPointToTeamTwo()" class="btn">+1 point</a>
     <h3 id="showPointsTwo">0</h3>
 
