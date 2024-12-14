@@ -89,3 +89,13 @@ function changeNameTeamTwo() {
         alert("Please enter some text.");
     }
 }
+
+function removePointTeamOne(){
+    teamTwoPoints -= 1;
+    document.getElementById("showPointsOne").innerHTML = teamOnePoints;   
+}
+
+function removePointTeamTwo(){
+    teamTwoPoints -= 1;
+    document.getElementById("showPointsTwo").innerHTML = teamTwoPoints;
+}
