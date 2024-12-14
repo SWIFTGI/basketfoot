@@ -90,12 +90,16 @@ function changeNameTeamTwo() {
     }
 }
 
-function removePointTeamOne(){
-    teamTwoPoints -= 1;
-    document.getElementById("showPointsOne").innerHTML = teamOnePoints;   
+function removePointTeamOne() {
+    if (teamOnePoints > 0) {
+        teamOnePoints -= 1;
+    }
+    document.getElementById("showPointsOne").innerHTML = teamOnePoints;
 }
 
-function removePointTeamTwo(){
-    teamTwoPoints -= 1;
+function removePointTeamTwo() {
+    if (teamTwoPoints > 0) {
+        teamTwoPoints -= 1;
+    }
     document.getElementById("showPointsTwo").innerHTML = teamTwoPoints;
 }
