@@ -38,3 +38,8 @@ body {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
